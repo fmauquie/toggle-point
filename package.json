@@ -1,0 +1,22 @@
+{
+  "name": "toggle-point",
+  "version": "0.0.1",
+  "description": "Allow toggling of any function, or object method or preoperty",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src -d lib --source-maps",
+    "build:watch": "npm run build -- -w",
+    "test": "mocha \"lib/**/*.test.js\"",
+    "test:watch": "npm test -- -w"
+  },
+  "author": "Fabien Mauquié",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-preset-es2015-node5": "^1.1.2",
+    "babel-preset-stage-2": "^6.5.0",
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "sinon": "^1.17.3"
+  }
+}
