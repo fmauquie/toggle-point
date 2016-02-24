@@ -41,6 +41,7 @@ async function myFunctionToToggle(param) {
 }
 
 const myToggledFunction = togglePoint(myFunctionToToggle, {
+  mode: togglePoint.mode.async,
   when: async (param) => await param === 1,
   then: async (param) => await Promise.resolve(-1)
 });
@@ -61,6 +62,7 @@ function* myFunctionToToggle(param) {
 }
 
 const myToggledFunction = togglePoint(myFunctionToToggle, {
+  mode: togglePoint.mode.generator,
   when: (param) => param === 1,
   * then(param) {
     yield 4;
