@@ -1,5 +1,5 @@
 {
-  "name": "toggle-point",
+  "name": "@fmauquie/toggle-point",
   "version": "0.0.1",
   "description": "Allow toggling of any function, or object method or preoperty",
   "main": "lib/index.js",
