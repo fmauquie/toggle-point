@@ -4,7 +4,7 @@ Toggle Point
 Allows toggling a function or object on any condition.
 
 (right now, only function toggle is supported,
- with support for async functions and generators.)
+ with support for async functions and generators).
 
 Written in ES6 for Node5. Support for node4 and browsers will be coming soon.
 
@@ -20,7 +20,7 @@ npm install --save @fmauquie/toggle-point
 
 ## Usage
 ```js
-import togglePoint from 'toggle-point';
+import togglePoint from '@fmauquie/toggle-point';
 
 function myFunctionToToggle(param) {
   return param;
@@ -44,7 +44,7 @@ By default both the `when` and `then` are synchronous. You can use `async` funct
 (or anything that returns a promise), by specifying `mode: togglePoint.mode.async`:
 
 ```js
-import togglePoint from 'toggle-point';
+import togglePoint from '@fmauquie/toggle-point';
 
 async function myFunctionToToggle(param) {
   return await Promise.resolve(param);
@@ -63,7 +63,7 @@ There is also a `generator` mode that allows you to toggle generator functions.
 Note that in generators the `when` function must be synchronous, as to not pollute the `yield` results:
 
 ```js
-import togglePoint from 'toggle-point';
+import togglePoint from '@fmauquie/toggle-point';
 
 function* myFunctionToToggle(param) {
   yield 1;
@@ -99,7 +99,8 @@ The lib is 100% unit-tested using Mocha and Chai. It is developed in TDD.
 - Toggle object properties
 - Do some performance testing
 - Make a version that can run on Node4 and browsers
-- Deploy on npm registry (once it looks good and well documented)
+- ~~Deploy on npm registry (once it looks good and well documented)~~
+  (still I could publish on just `toggle-point`, that would make it easier to use)
 - Develop a companion feature management library to have a complete feature toggle system
 - Use it on real production code (there's a reason why I'm developing this :) )
 
