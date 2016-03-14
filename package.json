@@ -1,6 +1,6 @@
 {
   "name": "@fmauquie/toggle-point",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Allow toggling of any function, or object method or preoperty",
   "main": "lib/index.js",
   "repository": {
