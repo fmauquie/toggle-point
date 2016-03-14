@@ -6,7 +6,17 @@ Allows toggling a function or object on any condition.
 (right now, only function toggle is supported,
  with support for async functions and generators.)
 
-Written in ES6 for Node5. Support for node4 and browsers will be coming soon
+Written in ES6 for Node5. Support for node4 and browsers will be coming soon.
+
+The concepts of this library are based on
+[Feature Toggle Implementation Techniques](http://martinfowler.com/articles/feature-toggles.html#ImplementationTechniques)
+by Pete Hodgson
+
+## Installation
+
+```sh
+npm install --save @fmauquie/toggle-point
+```
 
 ## Usage
 ```js
