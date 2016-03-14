@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "Allow toggling of any function, or object method or preoperty",
   "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fmauquie/toggle-point.git"
+  },
   "scripts": {
     "build": "babel src -d lib --source-maps",
     "build:watch": "npm run build -- -w",
