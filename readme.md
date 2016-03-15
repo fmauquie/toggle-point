@@ -15,12 +15,12 @@ Written in ES6 for Node5. Support for node4 and browsers will be coming soon.
 ## Installation
 
 ```sh
-npm install --save @fmauquie/toggle-point
+npm install --save toggle-point
 ```
 
 ## Usage
 ```js
-import togglePoint from '@fmauquie/toggle-point';
+import togglePoint from 'toggle-point';
 
 function myFunctionToToggle(param) {
   return param;
@@ -44,7 +44,7 @@ By default both the `when` and `then` are synchronous. You can use `async` funct
 (or anything that returns a promise), by specifying `mode: togglePoint.mode.async`:
 
 ```js
-import togglePoint from '@fmauquie/toggle-point';
+import togglePoint from 'toggle-point';
 
 async function myFunctionToToggle(param) {
   return await Promise.resolve(param);
@@ -63,7 +63,7 @@ There is also a `generator` mode that allows you to toggle generator functions.
 Note that in generators the `when` function must be synchronous, as to not pollute the `yield` results:
 
 ```js
-import togglePoint from '@fmauquie/toggle-point';
+import togglePoint from 'toggle-point';
 
 function* myFunctionToToggle(param) {
   yield 1;
