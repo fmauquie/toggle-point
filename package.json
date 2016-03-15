@@ -1,7 +1,7 @@
 {
-  "name": "@fmauquie/toggle-point",
+  "name": "toggle-point",
   "version": "0.1.1",
-  "description": "Allow toggling of any function, or object method or preoperty",
+  "description": "Allow toggling of any function, or object method or property",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
