@@ -1,16 +1,16 @@
 Toggle Point
 ============
 
-Allows toggling a function or object on any condition.
+> Feature toggles are a powerful technique, allowing teams to modify system behavior without changing code. [...] Toggles introduce complexity. We can keep that complexity in check by using **smart toggle implementation practices** and appropriate tools to manage our toggle configuration, but we should also aim to constrain the number of toggles in our system.
+
+> *Pete Hodgson, [Feature Toggles](http://martinfowler.com/articles/feature-toggles.html)*
+
+This library takes care of the *smart toggle implementation practices* part by allowing you to toggle a function or object on any condition.
 
 (right now, only function toggle is supported,
  with support for async functions and generators).
 
 Written in ES6 for Node5. Support for node4 and browsers will be coming soon.
-
-The concepts of this library are based on
-[Feature Toggle Implementation Techniques](http://martinfowler.com/articles/feature-toggles.html#ImplementationTechniques)
-by Pete Hodgson
 
 ## Installation
 
